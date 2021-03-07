@@ -9,7 +9,17 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <title>s3Digital.in - Your very own Electronics Store</title>
-        <meta name="description" content="">
+        <meta name="description" content="s3Digital.in - Your very own Electronics Store - Best elctronics store with huge collection of Televisions, Refrigerators, Air Conditioners, Washing Machines and other Accessories.">
+        <meta name="author" content="s3Digital">
+        <meta name="keywords" content="Electronic Stores, wholesale electronic store, electronic shop near me, electronics store near me, online electronics store, best electronic store">
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:title" content="s3Digital.in - Your very own Electronics Store" />
+        <meta property="og:site_name" content="s3Digital.in" />
+        <meta property="og:description" content="s3Digital.in - Your very own Electronics Store - Best elctronics store with huge collection of Televisions, Refrigerators, Air Conditioners, Washing Machines and other Accessories." />
+        <meta property="og:url" content="https://www.s3digital.in" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://s3digital.in/img/logo.jpg" />
 
         <!-- The compiled CSS file -->
         <link rel="stylesheet" href="css/production.css">
@@ -39,7 +49,7 @@
                 <!-- Television -->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Television500.jpg" alt="Television" onclick="changevisibility('tv_table')">
+                        <img class="info-image relative z2" src="img/Television.jpg" alt="Television" onclick="changevisibility('tv_table')">
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
@@ -56,7 +66,7 @@
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Refrigerators500.jpg" alt="Refrigerators" onclick="changevisibility('fridge_table')">
+                        <img class="info-image relative z2" src="img/Refrigerators.jpg" alt="Refrigerators" onclick="changevisibility('fridge_table')">
                     </div>
                 </div>
             </div>
@@ -65,7 +75,7 @@
             <div class="grid-row grid-row--center">
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Airconditioners500.jpg" alt="Air Conditioners" onclick="changevisibility('ac_table')">
+                        <img class="info-image relative z2" src="img/Airconditioners.jpg" alt="Air Conditioners" onclick="changevisibility('ac_table')">
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
@@ -82,7 +92,7 @@
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Washingmachines500.jpg" alt="Washing Machines" onclick="changevisibility('wm_table')"> 
+                        <img class="info-image relative z2" src="img/Washingmachines.jpg" alt="Washing Machines" onclick="changevisibility('wm_table')"> 
                     </div>
                 </div>
             </div>
@@ -91,7 +101,7 @@
             <div class="grid-row grid-row--center">
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Otheraccessories500.jpg" alt="Other Accessories" onclick="changevisibility('other_table')"> 
+                        <img class="info-image relative z2" src="img/Otheraccessories.jpg" alt="Other Accessories" onclick="changevisibility('other_table')"> 
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
@@ -113,11 +123,10 @@
                 }
                 else
                 {
-                document.getElementById(id).innerHTML = window[id]
+                document.getElementById(id).innerHTML = window[id];
                 }
-
-                }
-            const geturl = 'https://mztar2is5f.execute-api.ap-south-1.amazonaws.com/dev';
+            }
+            const geturl = 'https://z6frz47vyc.execute-api.ap-south-1.amazonaws.com/dev';
             var products_data ;
             var tv_table;
             var fridge_table;
@@ -125,11 +134,11 @@
             var wm_table;
             var other_table;
             function getdata()
-            {       var tv = document.getElementById('tv');
-                    var ac = document.getElementById('ac');
-                    var other = document.getElementById('other');
-                    var fridge = document.getElementById('fridge');
-                    var wm = document.getElementById('wm');
+            {       var tv = document.getElementById('tv_table');
+                    var ac = document.getElementById('ac_table');
+                    var other = document.getElementById('other_table');
+                    var fridge = document.getElementById('fridge_table');
+                    var wm = document.getElementById('wm_table');
 
                 try {
 
