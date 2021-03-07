@@ -9,17 +9,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <title>s3Digital.in - Your very own Electronics Store</title>
-        <meta name="description" content="s3Digital.in - Your very own Electronics Store - Best elctronics store with huge collection of Televisions, Refrigerators, Air Conditioners, Washing Machines and other Accessories.">
-        <meta name="author" content="s3Digital">
-        <meta name="keywords" content="Electronic Stores, wholesale electronic store, electronic shop near me, electronics store near me, online electronics store, best electronic store">
-        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
 
-        <meta property="og:title" content="s3Digital.in - Your very own Electronics Store" />
-        <meta property="og:site_name" content="s3Digital.in" />
-        <meta property="og:description" content="s3Digital.in - Your very own Electronics Store - Best elctronics store with huge collection of Televisions, Refrigerators, Air Conditioners, Washing Machines and other Accessories." />
-        <meta property="og:url" content="https://www.s3digital.in" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://s3digital.in/img/logo.jpg" />
         <!-- The compiled CSS file -->
         <link rel="stylesheet" href="css/production.css">
 
@@ -28,7 +19,7 @@
 
     </head>
 
-    <body class="has-animations">
+    <body class="has-animations" onload="getdata()">
 
 
     <!-- Header -->
@@ -43,61 +34,174 @@
     <main>
         <div class="container">
             <!-- Info -->
-            <section class="grid-row grid-row--center">
+            <section class="container">
+            <div class="grid-row grid-row--center">
                 <!-- Television -->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Television.jpg" alt="Television">
+                        <img class="info-image relative z2" src="img/Television500.jpg" alt="Television" onclick="changevisibility('tv_table')">
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
                     <h3>Television</h3>
                     <p>List of best Tv's from all top brands. Brands include LG, Samsung, Mi, Sony, etc., Sizes vary from 32inches to 108 inches</p>
                 </div>
+            </div>
+            <div id="tv_table" class="grid-row grid-row--center"></div>
+            <div class="grid-row grid-row--center">
                 <!-- Refrigerators -->
-                <div class="grid-column span-half pt3 pb3 mobile-m order-4">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
                     <h3>Refrigerators</h3>
                     <p>List of best Refrigerators from all top brands. Brands include LG, Samsung, Whirlpool, Panasonic, etc., Sizes vary from 190L to 500L</p>
                 </div>
-                <div class="grid-column span-half pt3 pb3 mobile-m order-3 reveal-on-scroll is-revealing">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Refrigerators.jpg" alt="Refrigerators">
+                        <img class="info-image relative z2" src="img/Refrigerators500.jpg" alt="Refrigerators" onclick="changevisibility('fridge_table')">
                     </div>
                 </div>
+            </div>
+                <div id="fridge_table" class="grid-row grid-row--center"></div>
                 <!-- Air Conditioners -->
-                <div class="grid-column span-half pt3 pb3 mobile-m order-5 reveal-on-scroll is-revealing">
+            <div class="grid-row grid-row--center">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Airconditioners.jpg" alt="Air Conditioners">
+                        <img class="info-image relative z2" src="img/Airconditioners500.jpg" alt="Air Conditioners" onclick="changevisibility('ac_table')">
                     </div>
                 </div>
-                <div class="grid-column span-half pt3 pb3 mobile-m order-6">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
                     <h3>Air Conditioners</h3>
                     <p>List of best Air Conditioners from all top brands. Brands include LG, Samsung, Whirlpool, Bluestar, etc., Sizes vary from 1Ton to 5Ton</p>
                 </div>
-                <!-- Archery -->
-                <div class="grid-column span-half pt3 pb3 mobile-m order-8">
+            </div>
+                <div id="ac_table" class="grid-row grid-row--center"></div>
+                <!-- Washing Machines -->
+            <div class="grid-row grid-row--center">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
                     <h3>Washing Machines</h3>
                     <p>List of best Air Conditioners from all top brands. Brands include LG, Samsung, Whirlpool, Bosch, etc., Sizes vary from 7L to 15L</p>
                 </div>
-                <div class="grid-column span-half pt3 pb3 mobile-m order-7 reveal-on-scroll is-revealing">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Washingmachines.jpg" alt="Washing Machines"> 
+                        <img class="info-image relative z2" src="img/Washingmachines500.jpg" alt="Washing Machines" onclick="changevisibility('wm_table')"> 
                     </div>
                 </div>
+            </div>
+                <div id="wm_table" class="grid-row grid-row--center"></div>
                 <!-- Other Accessories -->
-                <div class="grid-column span-half pt3 pb3 mobile-m order-9 reveal-on-scroll is-revealing">
+            <div class="grid-row grid-row--center">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
                     <div class="relative">
-                        <img class="info-image relative z2" src="img/Otheraccessories.jpg" alt="Other Accessories"> 
+                        <img class="info-image relative z2" src="img/Otheraccessories500.jpg" alt="Other Accessories" onclick="changevisibility('other_table')"> 
                     </div>
                 </div>
-                <div class="grid-column span-half pt3 pb3 mobile-m order-10">
+                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
                     <h3>Other Accessories</h3>
                     <p>List of best elctronic Accessories you might need for all your electronic equipment.</p>
                 </div>
+            </div>
+                <div id="other_table" class="grid-row grid-row--center"></div>
+            
             </section>
-
         </div>
+        <script type='text/javascript'>
+            function changevisibility(id)
+            {
+                console.log(document.getElementById(id));
+                if (document.getElementById(id).innerHTML)
+                {
+                document.getElementById(id).innerHTML="";
+                }
+                else
+                {
+                document.getElementById(id).innerHTML = window[id]
+                }
 
+                }
+            const geturl = 'https://mztar2is5f.execute-api.ap-south-1.amazonaws.com/dev';
+            var products_data ;
+            var tv_table;
+            var fridge_table;
+            var ac_table;
+            var wm_table;
+            var other_table;
+            function getdata()
+            {       var tv = document.getElementById('tv');
+                    var ac = document.getElementById('ac');
+                    var other = document.getElementById('other');
+                    var fridge = document.getElementById('fridge');
+                    var wm = document.getElementById('wm');
+
+                try {
+
+                    fetch(geturl,  {
+                        method: 'GET',
+                        credentials: 'include'
+                        })
+                    .then(response => {
+                        responsecopy = response.clone();
+                        if (!response.ok) {
+                        console.log(responsecopy.json());
+                        
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        products_data = data.split(/\r?\n|\r/);
+                        tv_table = '<br><table class="center">';
+                        fridge_table = '<br><table class="center">';
+                        ac_table = '<br><table class="center">';
+                        wm_table = '<br><table class="center">';
+                        other_table = '<br><table class="center">';
+                        for(var count = 0; count<products_data.length; count++)
+                        {
+                        var product_details = products_data[count].split("|");
+            
+                        table_data = '<tr>';
+                        for(var cell_count=1; cell_count<product_details.length; cell_count++)
+                        {
+                            table_data += '<td>'+product_details[cell_count]+'</td>';
+                        }
+                        table_data += '</tr>';
+                        switch (product_details[0].toLowerCase())
+                        {
+                            case "tv" : 
+                                tv_table +=table_data;
+                                break;
+                            case "ac" : 
+                                ac_table +=table_data;
+                                break;
+                            case "wm" : 
+                                wm_table +=table_data;
+                                break;
+                            case "fridge" : 
+                                fridge_table +=table_data;
+                                break;
+                            case "other" : 
+                                other_table +=table_data;
+                                
+
+                        }
+                        }
+                        
+                        tv.innerHTML = tv_table +'</table>';
+                        ac.innerHTML = ac_table +'</table>';
+                        wm.innerHTML = wm_table + '</table>';
+                        fridge.innerHTML = fridge_table +'</table>';
+                        other.innerHTML = other_table +'</table>';
+                                                
+                        console.log('Done');
+                    })
+                    .catch(error => {
+                            console.log(error);
+                    });
+
+                    } catch (error) {
+                        console.log(error);
+                    }
+                    
+            }
+
+        </script>
         <!-- Pricing -->
         <section class="align--center pt2 pb3">
             <p class="h2">For Best offers visit us at our Office.</p>
